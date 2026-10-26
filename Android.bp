@@ -7192,36 +7192,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcam3_transerverengine",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcam3_transerverengine.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.transsion.hardware.trancam.trancamserver@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamalgo.3dnr",
     owner: "itel",
     strip: {
@@ -25344,102 +25314,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkradioex@2.0",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.4",
-                "android.hardware.radio@1.5",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkradioex@3.0",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.4",
-                "android.hardware.radio@1.5",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.netdagent@1.0",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.neuropilot.agent@1.0",
     owner: "itel",
     strip: {
@@ -26195,34 +26069,6 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.6",
                 "vendor.mediatek.hardware.pq@2.7",
                 "vendor.mediatek.hardware.pq@2.8",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.transsion.hardware.trancam.trancamserver@1.0",
-    owner: "itel",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so",
-            ],
-            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -27890,15 +27736,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
-    owner: "itel",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "ccci_mdinit",
     owner: "itel",
@@ -28592,36 +28429,6 @@ cc_prebuilt_binary {
                 "libutils-v31",
                 "libhardware",
                 "vendor.mediatek.hardware.pq@2.15",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.transsion.hardware.trancam.trancamserver@1.0-service",
-    owner: "itel",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.transsion.hardware.trancam.trancamserver@1.0",
                 "libc++",
                 "libc",
                 "libm",
