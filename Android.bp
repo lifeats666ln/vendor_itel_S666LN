@@ -7803,7 +7803,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -7835,7 +7835,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter-v33",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -7849,7 +7849,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -7859,6 +7859,7 @@ cc_prebuilt_library_shared {
                 "libion_mtk",
                 "libcodec2_mtk_c2store",
                 "libcodec2_vpp_qt_plugin",
+                "libcodec2_vpp_mi_plugin",
                 "libcodec2_vpp_rs_plugin",
                 "libc++",
                 "libc",
@@ -7884,7 +7885,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter-v33",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -7898,7 +7899,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -7907,6 +7908,39 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libion_mtk",
                 "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_mi_plugin",
+    owner: "itel",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_mi_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libcodec2",
+                "libcodec2_vndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -7933,7 +7967,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcodec2_soft_common",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libcodec2",
                 "libcodec2_vndk",
                 "liblog",
@@ -7966,7 +8000,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcodec2_soft_common",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libcodec2",
                 "libcodec2_vndk",
                 "liblog",
@@ -8229,7 +8263,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter-v33",
+    name: "libformatter_mtk",
     owner: "itel",
     strip: {
         none: true,
@@ -8237,7 +8271,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter-v33.so",
+                "proprietary/vendor/lib64/libformatter_mtk.so",
             ],
             shared_libs: [
                 "libion_mtk",
