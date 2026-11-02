@@ -5,7 +5,7 @@
 on init
     restart volte_md_status
 
-service volte_md_status /system/vendor/bin/volte_md_status
+service volte_md_status /vendor/bin/volte_md_status
     class core
     user system
     group radio log system
