@@ -512,6 +512,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA_510 \
     libbwc \
+    libfsmaudio \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
