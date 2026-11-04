@@ -6,10 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/itel/S666LN
 
 PRODUCT_COPY_FILES += \
-    vendor/itel/S666LN/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/itel/S666LN/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
     vendor/itel/S666LN/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/itel/S666LN/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/itel/S666LN/proprietary/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/itel/S666LN/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
     vendor/itel/S666LN/proprietary/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcomutils.so \
@@ -20,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_socketwrapper.so \
     vendor/itel/S666LN/proprietary/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_service.so \
     vendor/itel/S666LN/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
-    vendor/itel/S666LN/proprietary/lib64/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libshowlogo.so \
     vendor/itel/S666LN/proprietary/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsignal.so \
     vendor/itel/S666LN/proprietary/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsink.so \
     vendor/itel/S666LN/proprietary/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsource.so \
