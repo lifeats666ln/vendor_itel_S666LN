@@ -329,7 +329,6 @@ PRODUCT_COPY_FILES += \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
-    vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/itel/S666LN/proprietary/vendor/etc/init/chg_sence_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chg_sence_init.rc \
@@ -719,7 +718,6 @@ PRODUCT_PACKAGES += \
     lib_iir \
     lib_speech_enh \
     libaal_cust \
-    libaal_key \
     libaal_mtk \
     libaibld \
     libaipe_bokeh \
@@ -1462,7 +1460,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
-    android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
