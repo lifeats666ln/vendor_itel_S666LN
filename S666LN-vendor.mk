@@ -1491,8 +1491,7 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_stack \
     volte_ua \
-    wmt_launcher \
-    wmt_loader
+    wmt_launcher
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
